@@ -1,0 +1,12 @@
+@import "./variables";
+@import "./font";
+
+
+button {
+   background-image: linear-gradient(180deg, #e1a0a0, $buttonColor);
+   box-shadow: 0 10px 40px #6B3838;
+}
+
+button:hover {
+   background-image:linear-gradient(180deg, #e2c1c1, #ea8282);
+}
