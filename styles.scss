@@ -1,3 +1,71 @@
 @import "./elements/button";
 @import "./elements/variables";
 @import "./elements/font";
+
+* {
+   padding: 0;
+   margin:0;
+   font-family: $primaryFont;
+   font-size: 16px;
+}
+
+body {
+   background-color: $backgroundColor;
+}
+
+p {
+   color: $secondaryFontColor;
+}
+
+.title {
+   color:$primaryFontColor;
+}
+
+nav {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+}
+#logo {
+   font-size: 1.5rem;
+   margin: 1.5rem;
+}
+
+main {
+   display: flex;
+   flex-direction: column;
+   align-items: left;
+   justify-content: space-evenly;
+   gap: 1.5rem;
+   min-width: 280px;
+   margin: auto;
+   padding:10%;
+   padding-top: 5rem;
+}
+
+
+
+#list__main {
+   font-size: 2rem;
+}
+
+#list__input {
+   background-color: $boxBackgroundColor;
+   border: 3px dashed $secondaryFontColor;
+   border-radius: 10%;
+   padding: 1rem;
+   display:flex;
+   justify-content: space-between;
+ }
+ 
+#list__text {
+   background-color: $boxBackgroundColor;
+   border: 0px solid $boxBackgroundColor;
+   outline: none;
+   color: $primaryFontColor
+}
+
+footer{
+   text-align: right;
+}

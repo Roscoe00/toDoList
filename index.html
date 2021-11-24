@@ -1,25 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap">
+   <link rel="stylesheet" href="styles.css">
    <title>Document</title>
 </head>
+
 <body>
    <nav>
-      <h2>MyTodos</h2>
+      <h2 class="title" id="logo">MyTodos</h2>
       <button>Reset</button>
    </nav>
-   <header>
-      <h1>Welcome Back Jake!</h1>
-      <p>Lets enter the tasks we need to complete for this upcoming week. Just use the input belw to create a todo</p>
-   </header>
-   <main>
-      <input type="text">
-      <h2>Tasks</h2>
-      <p>all tasks have been completed. Great job!</p>
+
+   <main class="list">
+      <h1 class="list__title title" id="list__main">Welcome Back Jake!</h1>
+      <p id="list__description">Lets enter the tasks we need to complete for this upcoming week. Just use the input belw
+         to create a todo</p>
+      <div id="list__input">
+         <input id="list__text" type="text" placeholder="Add your task here...">
+         <button id="list__add" type="button">+</button>
+      </div>
+      <h2 class="list__title title" id="list__sub">Tasks</h2>
+      <p id="list__default">all tasks have been completed. Great job!</p>
    </main>
+   <footer>
+      <button type="button">delete</button>
+   </footer>
+
+   <link rel="stylesheet" href="main.js">
 </body>
+
 </html>
