@@ -66,6 +66,27 @@ main {
    color: $primaryFontColor
 }
 
+#list__output{
+   .task{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      margin-bottom: 3px;
+      padding: 1rem;
+      background-color: $boxBackgroundColor;
+      .task__log{
+      width: 80%;
+      color: $primaryFontColor;
+   }
+      .task__edit{
+         color: $buttonColor;
+      }
+   }
+}
+
+
 footer{
    text-align: right;
 }
